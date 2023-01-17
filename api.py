@@ -64,7 +64,7 @@ def model (id):
      jsonObj = json.loads(encoded_data.iloc[i]['property_id'].to_json())
      print(type(jsonObj))
      for key, value in jsonObj.items(): 
-      if (simelrty[test]>85):
+      if (simelrty[test]>80):
        print(simelrty[test])
        ss.append(value)
       test+=1
