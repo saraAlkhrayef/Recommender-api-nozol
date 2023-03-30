@@ -56,7 +56,6 @@ def model (id):
    for s in range(5):
      sum += simelrty[s]
    avr = sum/5
-   print(indices)
    print(avr)
 
    recommend_item = [] 
@@ -66,7 +65,7 @@ def model (id):
      jsonObj = json.loads(encoded_data.iloc[i]['property_id'].to_json())
      print(type(jsonObj))
      for key, value in jsonObj.items(): 
-      if (simelrty[index]>80):
+      if (simelrty[index]>=80):
        print(simelrty[index])
        recommend_item.append(value)
       index+=1
